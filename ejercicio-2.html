@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio 2</title>
+    </head>
+    <body>
+        <script>
+            var valorHora = parseFloat(prompt('Ingrese el valor de la hora:'));
+            var horasPorMes = parseFloat(prompt('Ingrese la cantidad de horas trabajadas durante el mes'));
+            var aniosAntiguedad = parseFloat(prompt('Ingrese los años de antigüedad en la empresa'));
+
+            var sueldoMensual = valorHora * horasPorMes;
+            var sueldoAnual = sueldoMensual * 12;
+
+            var bonoPorAntiguedad = (sueldoMensual * 5) / 100;
+            var totalBono = bonoPorAntiguedad * aniosAntiguedad;
+
+            var sueldoTotalAnual = sueldoMensual + totalBono;
+
+            alert('Su sueldo total mensual es de: ' + sueldoMensual + ', mientras que su sueldo anual es un total de: ' + sueldoTotalAnual);
+        </script>
+    </body>
+</html>

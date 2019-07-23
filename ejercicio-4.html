@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio 4</title>
+    </head>
+    <body>
+        <script>
+            var valorHora = parseFloat(prompt('Ingrese el valor de la hora:'));
+            var horasMensuales = parseFloat(prompt('Ingrese el total de horas trabajadas durante el mes:'));
+            var aniosAntiguedad = parseFloat(prompt('Ingrese la cantidad de años trabajados en la empresa:'));
+
+            var segurosVendidos = parseFloat(prompt('Ingrese la cantidad de seguros vendidos:'));
+            var seguroMasCaro = parseFloat(prompt('Ingrese el valor del seguro más caro vendido:'));
+
+            var sueldoMensual = valorHora * horasMensuales;
+
+            var premioSeguroMasCaro = (seguroMasCaro * 50) / 100;
+            var premioSegurosVendidos = ((sueldoMensual * 20) / 100) * segurosVendidos;
+            var premioPorAnioAntiguedad = ((sueldoMensual * 10) / 100) * aniosAntiguedad;
+
+            var totalSueldoMensual = sueldoMensual + premioPorAnioAntiguedad + premioSeguroMasCaro + premioSegurosVendidos;
+
+            alert('Su sueldo total + premios es de: ' + totalSueldoMensual);
+        </script>
+    </body>
+</html>

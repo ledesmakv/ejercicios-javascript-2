@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio 3</title>
+    </head>
+    <body>
+        <script>
+            var horasMensuales = parseFloat(prompt('Ingrese la cantidad de horas trabajadas durante el mes:'));
+            var valorHora = parseFloat(prompt('Ingrese el valor de la hora:'));
+            var segurosVendidos = parseFloat(prompt('Ingrese la cantidad total de seguros vendidos en el mes:'));
+            var seguroMasCaro = parseFloat(prompt('Ingrese el valor del seguro más caro vendido:'));
+
+            var sueldoMensual = horasMensuales * valorHora;
+
+            var porcentajeSeguroMasCaro = (seguroMasCaro * 25) / 100;
+            var porcentajeSegurosVendidos = ((sueldoMensual * 15) / 100) * segurosVendidos;
+
+            var sueldoTotalMensual = sueldoMensual + porcentajeSeguroMasCaro + porcentajeSegurosVendidos;
+
+            alert('El total de su sueldo mensual + los premios correspondientes es de: ' + sueldoTotalMensual);
+        </script>
+    </body>
+</html>

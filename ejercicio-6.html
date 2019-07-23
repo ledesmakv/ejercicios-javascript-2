@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio 6</title>
+    </head>
+    <body>
+        <script>
+            var numero = parseFloat(prompt('Ingrese el número deseado o al azar:'));
+
+            if (numero % 3 == 0) {
+                alert('El número ingresado es múltiplo de 3');
+            } else if (numero % 5 == 0) {
+                alert('El número ingresado es múltiplo de 5');
+            } else if (numero % 3 == 0 && numero % 5 == 0) {
+                alert('El número ingresado es múltiplo de 3 y de 5');
+            } else {
+                alert('El número ingresado no es múltiplo de 3 ni de 5');
+            }
+        </script>
+    </body>
+</html>
