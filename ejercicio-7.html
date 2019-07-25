@@ -8,65 +8,19 @@
     </head>
     <body>
         <script>
-            var numero = parseFloat(prompt('Ingrese un número deseado o al azar:'));
             var numeroInicial = parseFloat(prompt('Ingrese el número inicial de su rango numérico:'));
             var numeroFinal = parseFloat(prompt('Ingrese el número final de su rango numérico'));
+            var numero = parseFloat(prompt('Ingrese un número deseado o al azar:'));
 
-            var rango = [];
-
-            if (numero >= numeroInicial && numero <= numeroFinal) {
-                alert('El número se encuentra dentro del rango!');
-                if (numeroInicial - numeroFinal == 5) {
+            if (numeroFinal - numeroInicial >= 5) {
+                if (numero > numeroInicial && numero < numeroFinal && numero % 2 == 0) {
+                    alert('El número ingresado es par');
+                } else if (numero % 2 !== 0) {
+                    alert('El número ingresado es impar');
                 }
+            } else {
+                alert('El rango debe tener una diferencia mínima de 5 números enteros');
             }
-
-            // Approach n° 1:
-
-            //  FOR NUMBERS
-
-            // function numberRange (start, end) {
-            //   return new Array(end - start).fill().map((d, i) => i + start);
-            // }
-
-            // numberRange(5, 10); //[5, 6, 7, 8, 9]
-
-            // FOR LETTERS
-
-            // function alphabetRange (start, end) {
-            //   return new Array(end.charCodeAt(0) - start.charCodeAt(0)).fill().map((d, i) => String.fromCharCode(i + start.charCodeAt(0)));
-            // }
-
-            // alphabetRange('c', 'h'); //["c", "d", "e", "f", "g"]
-
-            // Approach :v
-
-            // var range = (start, end) => [...Array(end - start + 1)].map((_, i) => start + i);
-
-            // Another one...
-
-            // function range(start, end) {
-            //     return Array(end-start).join(0).split(0).map(function(val, id) {return id+start});
-            // }
-
-            // Last one :v
-
-            //             function range(start, stop)
-            // {
-            //     var array = [];
-
-            //     var length = stop - start;
-
-            //     for (var i = 0; i <= length; i++) {
-            //         array[i] = start;
-            //         start++;
-            //     }
-
-            //     return array;
-            // }
-
-            // console.log(range(1, 7));  // [1,2,3,4,5,6,7]
-            // console.log(range(5, 10)); // [5,6,7,8,9,10]
-            // console.log(range(-2, 3)); // [-2,-1,0,1,2,3]
         </script>
     </body>
 </html>
