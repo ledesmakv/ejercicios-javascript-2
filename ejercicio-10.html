@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio 10</title>
+    </head>
+    <body>
+        <script>
+            var primerNumero = parseFloat(prompt('Ingrese el primer número: '));
+            var segundoNumero = parseFloat(prompt('Ingrese el segundo número: '));
+            var operadorMatematico = prompt('Ingrese el operador matemático deseado: ');
+
+            switch (operadorMatematico) {
+                case '+':
+                    var resultadoSuma = primerNumero + segundoNumero;
+                    alert('El resultado de la suma es: ' + resultadoSuma);
+                    break;
+
+                case '-':
+                    var resultadoResta = primerNumero - segundoNumero;
+                    alert('El resultado de la resta es: ' + resultadoResta);
+                    break;
+
+                case '*':
+                    var resultadoMultiplicacion = primerNumero * segundoNumero;
+                    alert('El resultado de la multiplicación es: ' + resultadoMultiplicacion);
+                    break;
+
+                case '/':
+                    var resultadoDivision = primerNumero / segundoNumero;
+                    alert('El resultado de la división es: ' + resultadoDivision);
+                    break;
+
+                default:
+                    alert('Ingrese un operador matemático: ');
+            }
+        </script>
+    </body>
+</html>
