@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio 9</title>
+    </head>
+    <body>
+        <script>
+            var primerNumero = parseFloat(prompt('Ingrese el primer número: '));
+            var segundoNumero = parseFloat(prompt('Ingrese el segundo número: '));
+            var tercerNumero = parseFloat(prompt('Ingrese el tercer número: '));
+
+            var resultadoMultiplicacion = primerNumero * segundoNumero * tercerNumero;
+            var resultadoSuma = primerNumero + segundoNumero + tercerNumero;
+
+            if (primerNumero > segundoNumero && primerNumero < tercerNumero) {
+                alert('Al multiplicar los tres números se obtiene: ' + resultadoMultiplicacion);
+            } else if (resultadoSuma % 2 == 0) {
+                alert('Al sumar los tres números se obtiene: ' + resultadoSuma + ' y es par');
+            } else {
+                alert('Al sumar los tres números se obtiene: ' + resultadoSuma + ' y es impar');
+            }
+        </script>
+    </body>
+</html>
